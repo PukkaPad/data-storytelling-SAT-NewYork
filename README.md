@@ -23,8 +23,9 @@ Installation
         * [Demographics](https://data.cityofnewyork.us/Education/School-Demographics-and-Accountability-Snapshot-20/ihfw-zy9j)
         * [School survey](https://data.cityofnewyork.us/Education/NYC-School-Survey-2011/mnz3-dyi8)
             * The above will be downloaded as `.zip` file. Extract the zip file and rename the directory to 'survey'.
+        # [High School Directory](https://data.cityofnewyork.us/Education/DOE-High-School-Directory-2014-2015/n3p6-zve2)
         * [School district maps](https://data.cityofnewyork.us/Education/School-Districts/r8nu-ymqj)
-* Switch back into the `data-cleaning-SAT-NewYork` directory using `cd ..`.
+* Switch back into the `data-cleaning-SAT-NewYork` directory using `cd ..`
 
 ### Install the requirements
 
