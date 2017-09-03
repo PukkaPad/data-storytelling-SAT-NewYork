@@ -1,4 +1,4 @@
-New York SAT - data cleaning project
+New York SAT - Storytelling Project
 -----------------------
 
 Data cleaning for the SAT New York city public schools.
