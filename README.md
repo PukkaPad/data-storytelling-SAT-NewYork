@@ -1,7 +1,8 @@
 New York SAT - Storytelling Project
 -----------------------
 
-Data cleaning for the SAT New York city public schools.
+Data cleaning, exploraration and visualization for the SAT New York city public schools.
+
 
 Installation
 ----------------------
