@@ -32,9 +32,5 @@ Installation
 * Install the requirements using `pip install -r requirements.txt`.
     * You may want to use a virtual environment for this.
 
-Usage
------------------------
 
-*
-*
 
