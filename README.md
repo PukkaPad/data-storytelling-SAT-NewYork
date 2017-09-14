@@ -26,6 +26,7 @@ Installation
             * The above will be downloaded as `.zip` file. Extract the zip file and rename the directory to 'survey'.
         * [High School Directory](https://data.cityofnewyork.us/Education/DOE-High-School-Directory-2014-2015/n3p6-zve2)
         * [School district maps](https://data.cityofnewyork.us/Education/School-Districts/r8nu-ymqj)
+            * Click on 'Export' and download as 'GeoJSON'
 * Switch back into the `data-cleaning-SAT-NewYork` directory using `cd ..`
 
 ### Install the requirements
