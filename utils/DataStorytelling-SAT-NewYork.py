@@ -738,7 +738,7 @@ for name, row in base_data.iterrows():
 schools_map.save('schools.html')
 
 
-# In[218]:
+# In[301]:
 
 
 get_ipython().run_cell_magic(u'HTML', u'', u'<iframe width = "100%" height = 500 src = "./schools.html"></iframe>')
@@ -752,7 +752,7 @@ schools_heatmap.add_child(HeatMap([[row["lat"], row["lon"]] for name, row in bas
 schools_heatmap.save("heatmap.html")
 
 
-# In[220]:
+# In[300]:
 
 
 get_ipython().run_cell_magic(u'HTML', u'', u'<iframe width = "100%" height = 500 src = "./heatmap.html"></iframe>')
@@ -799,7 +799,7 @@ def show_district_map(col, save_name, data_stat):
 show_district_map('SAT_score', 'Average_districts.html', mean_district_data )
 
 
-# In[221]:
+# In[299]:
 
 
 get_ipython().run_cell_magic(u'HTML', u'', u'<iframe width = "100%" height = 500 src = "./Average_districts.html"></iframe>')
@@ -828,7 +828,7 @@ min_district_data["school_dist"] = district_data["school_dist"].apply(lambda x: 
 show_district_map('SAT_score', 'Min_districts.html', min_district_data )
 
 
-# In[152]:
+# In[298]:
 
 
 get_ipython().run_cell_magic(u'HTML', u'', u'<iframe width = "100%" height = 500 src = "./Min_districts.html"></iframe>')
@@ -843,13 +843,13 @@ max_district_data["school_dist"] = district_data["school_dist"].apply(lambda x: 
 show_district_map('SAT_score', 'Max_districts.html', max_district_data )
 
 
-# In[154]:
+# In[297]:
 
 
 get_ipython().run_cell_magic(u'HTML', u'', u'<iframe width = "100%" height = 500 src = "./Max_districts.html"></iframe>')
 
 
-# In[207]:
+# In[296]:
 
 
 median_district_data = base_data.groupby("school_dist").agg(np.median)
@@ -879,22 +879,23 @@ show_district_map('SAT_score', 'Median_districts.html', median_district_data )
 # * female_per                
 # * male_per                 
 
-# In[158]:
+# In[264]:
 
 
-fig, axes = plt.subplots(nrows=5, ncols=2, figsize=(15,20))
-base_data.plot.scatter(ax=axes[0,0], x='SAT Math Avg. Score', y='SAT_score').set_title('SAT score x SAT Math Avg. score')
-base_data.plot.scatter(ax=axes[0,1], x='SAT Writing Avg. Score', y='SAT_score').set_title('SAT score x SAT Writing Avg. Score')
-base_data.plot.scatter(ax=axes[1,0], x='ell_percent', y='SAT_score').set_title('SAT score x % of students who are learning English')
-base_data.plot.scatter(ax=axes[1,1], x='total_enrollment', y='SAT_score').set_title('SAT score x Total enrollment')
-base_data.plot.scatter(ax=axes[2,0], x='white_per', y='SAT_score').set_title('SAT score x White %')
-base_data.plot.scatter(ax=axes[2,1], x='asian_per', y='SAT_score').set_title('SAT score x Asian %')
-base_data.plot.scatter(ax=axes[3,0], x='black_per', y='SAT_score').set_title('SAT score x Black %')
-base_data.plot.scatter(ax=axes[3,1], x='hispanic_per', y='SAT_score').set_title('SAT score x Hispanic %')
-base_data.plot.scatter(ax=axes[4,0], x='female_per', y='SAT_score').set_title('SAT score x Female %')
-base_data.plot.scatter(ax=axes[4,1], x='male_per', y='SAT_score').set_title('SAT score x Male %')
-fig.subplots_adjust(hspace=1.5)
-plt.tight_layout()
+if IN_JUPYTER:
+    fig, axes = plt.subplots(nrows=5, ncols=2, figsize=(15,20))
+    base_data.plot.scatter(ax=axes[0,0], x='SAT Math Avg. Score', y='SAT_score').set_title('SAT score x SAT Math Avg. score')
+    base_data.plot.scatter(ax=axes[0,1], x='SAT Writing Avg. Score', y='SAT_score').set_title('SAT score x SAT Writing Avg. Score')
+    base_data.plot.scatter(ax=axes[1,0], x='ell_percent', y='SAT_score').set_title('SAT score x % of students who are learning English')
+    base_data.plot.scatter(ax=axes[1,1], x='total_enrollment', y='SAT_score').set_title('SAT score x Total enrollment')
+    base_data.plot.scatter(ax=axes[2,0], x='white_per', y='SAT_score').set_title('SAT score x White %')
+    base_data.plot.scatter(ax=axes[2,1], x='asian_per', y='SAT_score').set_title('SAT score x Asian %')
+    base_data.plot.scatter(ax=axes[3,0], x='black_per', y='SAT_score').set_title('SAT score x Black %')
+    base_data.plot.scatter(ax=axes[3,1], x='hispanic_per', y='SAT_score').set_title('SAT score x Hispanic %')
+    base_data.plot.scatter(ax=axes[4,0], x='female_per', y='SAT_score').set_title('SAT score x Female %')
+    base_data.plot.scatter(ax=axes[4,1], x='male_per', y='SAT_score').set_title('SAT score x Male %')
+    fig.subplots_adjust(hspace=1.5)
+    plt.tight_layout()
 
 
 # **% of students learning english:**
@@ -907,7 +908,7 @@ show_district_map('ell_percent', 'ell_Max_districts.html', max_district_data )
 show_district_map('ell_percent', 'ell_Mean_districts.html', median_district_data )
 
 
-# In[256]:
+# In[295]:
 
 
 get_ipython().run_cell_magic(u'HTML', u'', u'<table class="tg" width="100%">\n  <tr>\n    <th>% Students learning english (Median values)</th>\n    <th>SAT score (Median values)</th>\n  </tr>\n      <tr>\n    <th><iframe width = "100%" height = 500 src = "./ell_Median_districts.html"></iframe></th>\n    <th><iframe width = "100%" height = 500 src = "./Median_districts.html"></iframe></th>\n  </tr>\n  <tr>\n    <th>% Students learning english (Max values)</th>\n    <th>SAT score (Max values)</th>\n  </tr>\n      <tr>\n    <th><iframe width = "100%" height = 500 src = "./ell_Max_districts.html"></iframe></th>\n    <th><iframe width = "100%" height = 500 src = "./Max_districts.html"></iframe></th>\n  </tr>\n  <tr>\n    <th>% Students learning english (Mean values)</th>\n    <th>SAT score (Mean values)</th>\n  </tr>\n      <tr>\n    <th><iframe width = "100%" height = 500 src = "./ell_Mean_districts.html"></iframe></th>\n    <th><iframe width = "100%" height = 500 src = "./Average_districts.html"></iframe></th>\n  </tr>\n</table>')
@@ -959,7 +960,7 @@ show_low_enroll_map('SAT_score', 'median_SAT_ell.html', median_district_data )
 show_low_enroll_map('total_enrollment', 'median_enroll_ell.html', median_district_data )
 
 
-# In[260]:
+# In[294]:
 
 
 get_ipython().run_cell_magic(u'HTML', u'', u'<table class="tg" width="100%">\n  <tr>\n    <th>% SAT score (Median values)</th>\n    <th>Total enrollment (Median values)</th>\n  </tr>\n      <tr>\n    <th><iframe width = "100%" height = 500 src = "./median_SAT_ell.html"></iframe></th>\n    <th><iframe width = "100%" height = 500 src = "./median_enroll_ell.html"></iframe></th>\n  </tr>')
@@ -969,19 +970,67 @@ get_ipython().run_cell_magic(u'HTML', u'', u'<table class="tg" width="100%">\n  
 
 # **Race and SAT scores**
 
-# In[ ]:
+# In[280]:
 
 
+race = base_data[['SAT_score', 'white_per', 'asian_per', 'black_per',                  'hispanic_per']].copy()
+corr = race.corr()
+race_corr = base_data.corr()["SAT_score"][["white_per", "asian_per", "black_per", "hispanic_per"]]
+
+if IN_JUPYTER:
+    fig, axes = plt.subplots(nrows=1, ncols=2, figsize=(20,5))
+    sns.heatmap(corr, ax=axes[0]).set_title('Heatmap - Correlation')
+    race_corr.plot.bar(ax=axes[1]).set_title('Bar plot - Correlation')
 
 
+# Higher % of white and asian students correlate with higher SAT scores. Higher % of black and hispanic students correlate with lower SAT scores. 
 
-# In[ ]:
-
-
-
+# In[291]:
 
 
-# **Gender and SAT scores**
+show_low_enroll_map('black_per', 'black_districts.html', max_district_data )
+show_low_enroll_map('hispanic_per', 'hispanic_districts.html', max_district_data )
+
+
+# In[306]:
+
+
+get_ipython().run_cell_magic(u'HTML', u'', u'<table class="tg" width="100%">\n  <tr>\n    <th>% Black students</th>\n    <th>SAT score(Max values)</th>\n  </tr>\n      <tr>\n    <th><iframe width = "100%" height = 500 src = "./black_districts.html"></iframe></th>\n    <th><iframe width = "100%" height = 500 src = "./Max_districts.html"></iframe></th>\n  </tr>\n  <tr>\n    <th>% Hispanic students</th>\n    <th>SAT score(Max values)</th>\n  </tr>\n      <tr>\n    <th><iframe width = "100%" height = 500 src = "./hispanic_districts.html"></iframe></th>\n    <th><iframe width = "100%" height = 500 src = "./Max_districts.html"></iframe></th>\n  </tr>')
+
+
+# % of Balck students is higher in districts where SAT scores are low. I can identify the same patter for hispanic students with one difference, there's also a proportion of hispanic students learing english.
+# 
+# This [article](https://www.brookings.edu/research/race-gaps-in-sat-scores-highlight-inequality-and-hinder-upward-mobility/) provides a great discussion about both race and gender.
+
+# **AP Score**
+
+# Is there a relationship  between Advanced Placement exams and higher SAT scores?
+
+# In[312]:
+
+
+base_data["AP_proportion"] = (base_data["AP Test Takers "] / base_data["total_enrollment"])*100
+
+base_data.plot.scatter(x='AP_proportion', y='SAT_score', title='SAT score by AP proportion')
+plt.xlabel('% AP')
+plt.ylabel('SAT score')
+
+
+# Generally speaking, higher proportion of students taking the AP exam higher the SAT score.
+# a strong correlation between the two. An interesting cluster of schools is the one at the top right, which has high SAT scores and a high proportion of students that take the AP exams:
+
+# In[313]:
+
+
+base_data[(base_data["AP_proportion"] > .3) & (base_data["SAT_score"] > 1700)]["School Name"]
+
+
+# These schools above are  mostly highly selective school. From wikipedia:
+# * ELEANOR ROOSEVELT HIGH SCHOOL: "Every year, the school selects 125 to 140 students out of over 6,000 applicants (...) Eleanor Roosevelt High School offers a comprehensive college preparatory program with Advanced Placement (AP) offerings, electives, and opportunities for college credit"
+# * STUYVESANT HIGH SCHOOL: "is the most selective school of the nine specialized high schools in New York City, United States. (...) Admission to Stuyvesant involves passing the Specialized High Schools Admissions Test"
+# * BEACON HIGH SCHOOL: "The Beacon School is a selective college-preparatory public high school. (...) Beacon also offers several Advanced Placement courses"
+# 
+# etc
 
 # In[ ]:
 

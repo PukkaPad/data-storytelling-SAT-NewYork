@@ -19993,7 +19993,7 @@ Name: SAT_score, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[218]:</div>
+<div class="prompt input_prompt">In&nbsp;[301]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="o">%%</span><span class="k">HTML</span>
@@ -20041,7 +20041,7 @@ Name: SAT_score, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[220]:</div>
+<div class="prompt input_prompt">In&nbsp;[300]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="o">%%</span><span class="k">HTML</span>
@@ -20157,7 +20157,7 @@ Name: SAT_score, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[221]:</div>
+<div class="prompt input_prompt">In&nbsp;[299]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="o">%%</span><span class="k">HTML</span>
@@ -20243,7 +20243,7 @@ Best SAT_score average:</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[152]:</div>
+<div class="prompt input_prompt">In&nbsp;[298]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="o">%%</span><span class="k">HTML</span>
@@ -20292,7 +20292,7 @@ Best SAT_score average:</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[154]:</div>
+<div class="prompt input_prompt">In&nbsp;[297]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="o">%%</span><span class="k">HTML</span>
@@ -20325,7 +20325,7 @@ Best SAT_score average:</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[207]:</div>
+<div class="prompt input_prompt">In&nbsp;[296]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">median_district_data</span> <span class="o">=</span> <span class="n">base_data</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;school_dist&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">median</span><span class="p">)</span>
@@ -20393,22 +20393,23 @@ Best SAT_score average:</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[158]:</div>
+<div class="prompt input_prompt">In&nbsp;[264]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">nrows</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">ncols</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mi">20</span><span class="p">))</span>
-<span class="n">base_data</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;SAT Math Avg. Score&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;SAT_score&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;SAT score x SAT Math Avg. score&#39;</span><span class="p">)</span>
-<span class="n">base_data</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;SAT Writing Avg. Score&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;SAT_score&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;SAT score x SAT Writing Avg. Score&#39;</span><span class="p">)</span>
-<span class="n">base_data</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;ell_percent&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;SAT_score&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;SAT score x </span><span class="si">% o</span><span class="s1">f students who are learning English&#39;</span><span class="p">)</span>
-<span class="n">base_data</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;total_enrollment&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;SAT_score&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;SAT score x Total enrollment&#39;</span><span class="p">)</span>
-<span class="n">base_data</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;white_per&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;SAT_score&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;SAT score x White %&#39;</span><span class="p">)</span>
-<span class="n">base_data</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;asian_per&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;SAT_score&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;SAT score x Asian %&#39;</span><span class="p">)</span>
-<span class="n">base_data</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;black_per&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;SAT_score&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;SAT score x Black %&#39;</span><span class="p">)</span>
-<span class="n">base_data</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;hispanic_per&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;SAT_score&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;SAT score x Hispanic %&#39;</span><span class="p">)</span>
-<span class="n">base_data</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;female_per&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;SAT_score&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;SAT score x Female %&#39;</span><span class="p">)</span>
-<span class="n">base_data</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;male_per&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;SAT_score&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;SAT score x Male %&#39;</span><span class="p">)</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">subplots_adjust</span><span class="p">(</span><span class="n">hspace</span><span class="o">=</span><span class="mf">1.5</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">if</span> <span class="n">IN_JUPYTER</span><span class="p">:</span>
+    <span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">nrows</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">ncols</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mi">20</span><span class="p">))</span>
+    <span class="n">base_data</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;SAT Math Avg. Score&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;SAT_score&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;SAT score x SAT Math Avg. score&#39;</span><span class="p">)</span>
+    <span class="n">base_data</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;SAT Writing Avg. Score&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;SAT_score&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;SAT score x SAT Writing Avg. Score&#39;</span><span class="p">)</span>
+    <span class="n">base_data</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;ell_percent&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;SAT_score&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;SAT score x </span><span class="si">% o</span><span class="s1">f students who are learning English&#39;</span><span class="p">)</span>
+    <span class="n">base_data</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;total_enrollment&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;SAT_score&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;SAT score x Total enrollment&#39;</span><span class="p">)</span>
+    <span class="n">base_data</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;white_per&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;SAT_score&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;SAT score x White %&#39;</span><span class="p">)</span>
+    <span class="n">base_data</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;asian_per&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;SAT_score&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;SAT score x Asian %&#39;</span><span class="p">)</span>
+    <span class="n">base_data</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;black_per&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;SAT_score&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;SAT score x Black %&#39;</span><span class="p">)</span>
+    <span class="n">base_data</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;hispanic_per&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;SAT_score&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;SAT score x Hispanic %&#39;</span><span class="p">)</span>
+    <span class="n">base_data</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;female_per&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;SAT_score&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;SAT score x Female %&#39;</span><span class="p">)</span>
+    <span class="n">base_data</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;male_per&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;SAT_score&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;SAT score x Male %&#39;</span><span class="p">)</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">subplots_adjust</span><span class="p">(</span><span class="n">hspace</span><span class="o">=</span><span class="mf">1.5</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -22502,7 +22503,7 @@ Uw4MEREREREREUk9NWCIiIiIiIiISOqpAUNEREREREREUk8NGCIiIiIiIiKSemrAEBEREREREZHU
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[256]:</div>
+<div class="prompt input_prompt">In&nbsp;[295]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="o">%%</span><span class="k">HTML</span>
@@ -22862,7 +22863,7 @@ More info about english learners can be found <a href="https://nces.ed.gov/progr
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[260]:</div>
+<div class="prompt input_prompt">In&nbsp;[294]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="o">%%</span><span class="k">HTML</span>
@@ -22929,10 +22930,353 @@ More info about english learners can be found <a href="https://nces.ed.gov/progr
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[280]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span> 
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">race</span> <span class="o">=</span> <span class="n">base_data</span><span class="p">[[</span><span class="s1">&#39;SAT_score&#39;</span><span class="p">,</span> <span class="s1">&#39;white_per&#39;</span><span class="p">,</span> <span class="s1">&#39;asian_per&#39;</span><span class="p">,</span> <span class="s1">&#39;black_per&#39;</span><span class="p">,</span>\
+                  <span class="s1">&#39;hispanic_per&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">corr</span> <span class="o">=</span> <span class="n">race</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
+<span class="n">race_corr</span> <span class="o">=</span> <span class="n">base_data</span><span class="o">.</span><span class="n">corr</span><span class="p">()[</span><span class="s2">&quot;SAT_score&quot;</span><span class="p">][[</span><span class="s2">&quot;white_per&quot;</span><span class="p">,</span> <span class="s2">&quot;asian_per&quot;</span><span class="p">,</span> <span class="s2">&quot;black_per&quot;</span><span class="p">,</span> <span class="s2">&quot;hispanic_per&quot;</span><span class="p">]]</span>
+
+<span class="k">if</span> <span class="n">IN_JUPYTER</span><span class="p">:</span>
+    <span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">nrows</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ncols</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+    <span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">corr</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Heatmap - Correlation&#39;</span><span class="p">)</span>
+    <span class="n">race_corr</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Bar plot - Correlation&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Higher % of white and asian students correlate with higher SAT scores. Higher % of black and hispanic students correlate with lower SAT scores.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[291]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">show_low_enroll_map</span><span class="p">(</span><span class="s1">&#39;black_per&#39;</span><span class="p">,</span> <span class="s1">&#39;black_districts.html&#39;</span><span class="p">,</span> <span class="n">max_district_data</span> <span class="p">)</span>
+<span class="n">show_low_enroll_map</span><span class="p">(</span><span class="s1">&#39;hispanic_per&#39;</span><span class="p">,</span> <span class="s1">&#39;hispanic_districts.html&#39;</span><span class="p">,</span> <span class="n">max_district_data</span> <span class="p">)</span>
 </pre></div>
 
 </div>
@@ -22942,13 +23286,65 @@ More info about english learners can be found <a href="https://nces.ed.gov/progr
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[306]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span> 
+<div class=" highlight hl-ipython2"><pre><span></span><span class="o">%%</span><span class="k">HTML</span>
+&lt;table class=&quot;tg&quot; width=&quot;100%&quot;&gt;
+  &lt;tr&gt;
+    &lt;th&gt;% Black students&lt;/th&gt;
+    &lt;th&gt;SAT score(Max values)&lt;/th&gt;
+  &lt;/tr&gt;
+      &lt;tr&gt;
+    &lt;th&gt;&lt;iframe width = &quot;100%&quot; height = 500 src = &quot;./black_districts.html&quot;&gt;&lt;/iframe&gt;&lt;/th&gt;
+    &lt;th&gt;&lt;iframe width = &quot;100%&quot; height = 500 src = &quot;./Max_districts.html&quot;&gt;&lt;/iframe&gt;&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th&gt;% Hispanic students&lt;/th&gt;
+    &lt;th&gt;SAT score(Max values)&lt;/th&gt;
+  &lt;/tr&gt;
+      &lt;tr&gt;
+    &lt;th&gt;&lt;iframe width = &quot;100%&quot; height = 500 src = &quot;./hispanic_districts.html&quot;&gt;&lt;/iframe&gt;&lt;/th&gt;
+    &lt;th&gt;&lt;iframe width = &quot;100%&quot; height = 500 src = &quot;./Max_districts.html&quot;&gt;&lt;/iframe&gt;&lt;/th&gt;
+  &lt;/tr&gt;
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<table class="tg" width="100%">
+  <tr>
+    <th>% Black students</th>
+    <th>SAT score(Max values)</th>
+  </tr>
+      <tr>
+    <th><iframe width = "100%" height = 500 src = "./black_districts.html"></iframe></th>
+    <th><iframe width = "100%" height = 500 src = "./Max_districts.html"></iframe></th>
+  </tr>
+  <tr>
+    <th>% Hispanic students</th>
+    <th>SAT score(Max values)</th>
+  </tr>
+      <tr>
+    <th><iframe width = "100%" height = 500 src = "./hispanic_districts.html"></iframe></th>
+    <th><iframe width = "100%" height = 500 src = "./Max_districts.html"></iframe></th>
+  </tr>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -22957,7 +23353,435 @@ More info about english learners can be found <a href="https://nces.ed.gov/progr
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Gender and SAT scores</strong></p>
+<p>% of Balck students is higher in districts where SAT scores are low. I can identify the same patter for hispanic students with one difference, there's also a proportion of hispanic students learing english.</p>
+<p>This <a href="https://www.brookings.edu/research/race-gaps-in-sat-scores-highlight-inequality-and-hinder-upward-mobility/">article</a> provides a great discussion about both race and gender.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>AP Score</strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Is there a relationship  between Advanced Placement exams and higher SAT scores?</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[312]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">base_data</span><span class="p">[</span><span class="s2">&quot;AP_proportion&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">base_data</span><span class="p">[</span><span class="s2">&quot;AP Test Takers &quot;</span><span class="p">]</span> <span class="o">/</span> <span class="n">base_data</span><span class="p">[</span><span class="s2">&quot;total_enrollment&quot;</span><span class="p">])</span><span class="o">*</span><span class="mi">100</span>
+
+<span class="n">base_data</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;AP_proportion&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;SAT_score&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;SAT score by AP proportion&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;% AP&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;SAT score&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[312]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;matplotlib.text.Text at 0x116cb3890&gt;</pre>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+Z20m/TAsf89KVVd4umeVVsAtViR1OitnOVdvpVllReu913+H/r6+RFWl8sra7ompuqvZks6bK3/P
+RqtAG/1stSQJilbXOpurLyV1OsNZztUbnqwMJoVtNapvrVFX+XS2yjFUVvZhmOQ1ae1Z5fmLnc3V
+l5I6neGsjdWbNwbJ5+I0CjMr+TBM6wM0SehzTpIkqZ0ZztpYZVA5PD+/ZMf/gf6exW046g3vtVOY
+SRL63BFektTODGdtrDKoVM4dOzw/v6JVlu0eZlY6J6kd5qq1QxslSatjOOsglWFty6W3Lfl+vVWW
+nTTBeqVDqu0wV60d2ihJWh3DWQerrIjNzs2ze2LqqEpLHiZY56Ei1A7Du+3QRknS6rjPWQfbvnnj
+kj3MFiAX+4JVO3EgD/uXtcP+We3QRknS6lg5a0ONqky790zx3hu+U9xaY6l6lZZWVa+qDc3loSLU
+DsO77dBGSdLqGM7aUKN5Rztu3lU1mEH9Skur5jNVC2JZLkqoDKUXvvIJuZ1kn4chaElSugxnLdaM
+6lSjKlOtqlOtg9dLbSoFs0bvs1rVgtj2F2dXEaoWSrefuTHzOXCSpO7knLMWa8bcqkbzjiq/D4Vg
+dtnWTVUDRrVgVu19m6X8DM5SYKw8U7SVQahauM3DHDhJUneyctZizZhb1Wje0fbNG3nv9UfmnK0f
+LjynVtWuWht6YEXVq1r3yMNqzFqqVfLyMAcuT/L85ydJncZwlqJqH2grnVu1nA/HDaPDXP6Gpx51
+fduVO6vOKat2DFR/Xy/Mk+iEgXK15q3leX+uamF3x427Ompj3tXK85+fJHUahzVTVG1orNqQXkm1
+LSbqvddy1aoGVW65AYUwspJ71rpHsypR9fpopaoNqdb7c+pGVhIlqXWsnKWo2gdavdV29aoTzfhw
+rFW12zA6zHvOPfmo6tGFH/v2su9Z6x7NWo1Z2UfnX30n/X29iSt7SSuQropcqtOO+JKkPLNylqLl
+bhhaL4A1Y/PRetWgatWjavdsVLmqdY/VVqJ+/qv9S4ZlSxZgWZU9J/qvjJVESWodK2cpqjaXqV7l
+pl51ohmbjy63GlR1LtZN9ece1brHaitRb7/q6GBWKUllz+G5lbGSKEmtYzhLUbUPtFqT8qF+AFvu
+h2O1EMg8DU8WKP/+y8844cgbLhT+lVW4mdh36KhrPSw2C0hWTXR4TpKUd4azFqsXbppZnag2fw1o
+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
+"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Generally speaking, higher proportion of students taking the AP exam higher the SAT score.
+a strong correlation between the two. An interesting cluster of schools is the one at the top right, which has high SAT scores and a high proportion of students that take the AP exams:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[313]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">base_data</span><span class="p">[(</span><span class="n">base_data</span><span class="p">[</span><span class="s2">&quot;AP_proportion&quot;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="o">.</span><span class="mi">3</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">base_data</span><span class="p">[</span><span class="s2">&quot;SAT_score&quot;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">1700</span><span class="p">)][</span><span class="s2">&quot;School Name&quot;</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[313]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>206            ELEANOR ROOSEVELT HIGH SCHOOL
+207            ELEANOR ROOSEVELT HIGH SCHOOL
+228                   STUYVESANT HIGH SCHOOL
+229                   STUYVESANT HIGH SCHOOL
+270                       BEACON HIGH SCHOOL
+271                       BEACON HIGH SCHOOL
+272     FIORELLO H. LAGUARDIA HIGH SCHOOL OF
+273     FIORELLO H. LAGUARDIA HIGH SCHOOL OF
+294     HIGH SCHOOL FOR MATHEMATICS  SCIENCE
+295     HIGH SCHOOL FOR MATHEMATICS  SCIENCE
+400             BRONX HIGH SCHOOL OF SCIENCE
+401             BRONX HIGH SCHOOL OF SCIENCE
+408    HIGH SCHOOL OF AMERICAN STUDIES AT LE
+409    HIGH SCHOOL OF AMERICAN STUDIES AT LE
+464           BROOKLYN TECHNICAL HIGH SCHOOL
+465           BROOKLYN TECHNICAL HIGH SCHOOL
+642              TOWNSEND HARRIS HIGH SCHOOL
+643              TOWNSEND HARRIS HIGH SCHOOL
+682    QUEENS HIGH SCHOOL FOR THE SCIENCES A
+683    QUEENS HIGH SCHOOL FOR THE SCIENCES A
+728      STATEN ISLAND TECHNICAL HIGH SCHOOL
+729      STATEN ISLAND TECHNICAL HIGH SCHOOL
+Name: School Name, dtype: object</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>These schools above are  mostly highly selective school. From wikipedia:</p>
+<ul>
+<li>ELEANOR ROOSEVELT HIGH SCHOOL: "Every year, the school selects 125 to 140 students out of over 6,000 applicants (...) Eleanor Roosevelt High School offers a comprehensive college preparatory program with Advanced Placement (AP) offerings, electives, and opportunities for college credit"</li>
+<li>STUYVESANT HIGH SCHOOL: "is the most selective school of the nine specialized high schools in New York City, United States. (...) Admission to Stuyvesant involves passing the Specialized High Schools Admissions Test"</li>
+<li>BEACON HIGH SCHOOL: "The Beacon School is a selective college-preparatory public high school. (...) Beacon also offers several Advanced Placement courses"</li>
+</ul>
+<p>etc</p>
 
 </div>
 </div>
