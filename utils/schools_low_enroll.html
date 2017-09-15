@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_bb867f77658641ba90381f169233bbc5 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css" />
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_bb867f77658641ba90381f169233bbc5" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_bb867f77658641ba90381f169233bbc5 = L.map(
+                                  'map_bb867f77658641ba90381f169233bbc5',
+                                  {center: [40.7784010896,-73.9083213332],
+                                  zoom: 10,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_d7131703cf8d4a23bfeb3c825f734ae0 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null, 
+  "detectRetina": false, 
+  "maxZoom": 18, 
+  "minZoom": 1, 
+  "noWrap": false, 
+  "subdomains": "abc"
+}
+                ).addTo(map_bb867f77658641ba90381f169233bbc5);
+        
+    
+            var marker_cluster_ed4cf9e8bf5c49a8a0c4aa6f00a220ea = L.markerClusterGroup({
+                
+            });
+            map_bb867f77658641ba90381f169233bbc5.addLayer(marker_cluster_ed4cf9e8bf5c49a8a0c4aa6f00a220ea);
+            
+    
+
+            var marker_e618c43d691a4aeb9c76cf97fd24612c = L.marker(
+                [40.870377467,-73.898162952],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_ed4cf9e8bf5c49a8a0c4aa6f00a220ea);
+            
+    
+            var popup_bd8a142ede05411da31f2adb4094776f = L.popup({maxWidth: '300'});
+
+            
+                var html_fd1f183009df4421a9bd497cd9699fec = $('<div id="html_fd1f183009df4421a9bd497cd9699fec" style="width: 100.0%; height: 100.0%;">32K556: Bushwick Leaders High School for Academic Excellence</div>')[0];
+                popup_bd8a142ede05411da31f2adb4094776f.setContent(html_fd1f183009df4421a9bd497cd9699fec);
+            
+
+            marker_e618c43d691a4aeb9c76cf97fd24612c.bindPopup(popup_bd8a142ede05411da31f2adb4094776f);
+
+            
+        
+    
+
+            var marker_3a61d644fbd244a79213f343cecc199b = L.marker(
+                [40.870377467,-73.898162952],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_ed4cf9e8bf5c49a8a0c4aa6f00a220ea);
+            
+    
+            var popup_9049b1de40384e8cb2c7fa1ee086cc38 = L.popup({maxWidth: '300'});
+
+            
+                var html_7bf141ce5e754e8699ef0b6fe630e027 = $('<div id="html_7bf141ce5e754e8699ef0b6fe630e027" style="width: 100.0%; height: 100.0%;">32K556: Bushwick Leaders High School for Academic Excellence</div>')[0];
+                popup_9049b1de40384e8cb2c7fa1ee086cc38.setContent(html_7bf141ce5e754e8699ef0b6fe630e027);
+            
+
+            marker_3a61d644fbd244a79213f343cecc199b.bindPopup(popup_9049b1de40384e8cb2c7fa1ee086cc38);
+
+            
+        
+    
+
+            var marker_fe0c201435014bfdb2d0648557bdd570 = L.marker(
+                [40.810036192,-73.917812482],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_ed4cf9e8bf5c49a8a0c4aa6f00a220ea);
+            
+    
+            var popup_9baa10e642cc4795ab88adc9da0825dd = L.popup({maxWidth: '300'});
+
+            
+                var html_df251de8b05e423096562fbc377439c6 = $('<div id="html_df251de8b05e423096562fbc377439c6" style="width: 100.0%; height: 100.0%;">32K556: Bushwick Leaders High School for Academic Excellence</div>')[0];
+                popup_9baa10e642cc4795ab88adc9da0825dd.setContent(html_df251de8b05e423096562fbc377439c6);
+            
+
+            marker_fe0c201435014bfdb2d0648557bdd570.bindPopup(popup_9baa10e642cc4795ab88adc9da0825dd);
+
+            
+        
+    
+
+            var marker_0322c92a0c44427aa6f211779bd531b8 = L.marker(
+                [40.810036192,-73.917812482],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_ed4cf9e8bf5c49a8a0c4aa6f00a220ea);
+            
+    
+            var popup_32eaf5df4c0f48ba892eb5bd766fc22e = L.popup({maxWidth: '300'});
+
+            
+                var html_af46fca1fa824ddf918b32a91508210d = $('<div id="html_af46fca1fa824ddf918b32a91508210d" style="width: 100.0%; height: 100.0%;">32K556: Bushwick Leaders High School for Academic Excellence</div>')[0];
+                popup_32eaf5df4c0f48ba892eb5bd766fc22e.setContent(html_af46fca1fa824ddf918b32a91508210d);
+            
+
+            marker_0322c92a0c44427aa6f211779bd531b8.bindPopup(popup_32eaf5df4c0f48ba892eb5bd766fc22e);
+
+            
+        
+    
+
+            var marker_1dab1217696d4de7b332ca560617ada9 = L.marker(
+                [40.849102168,-73.916088441],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_ed4cf9e8bf5c49a8a0c4aa6f00a220ea);
+            
+    
+            var popup_2cda88c928af42a2ac8ad56768c74a36 = L.popup({maxWidth: '300'});
+
+            
+                var html_c8d8061cf6b34cb7b3a6db518a7a4b0b = $('<div id="html_c8d8061cf6b34cb7b3a6db518a7a4b0b" style="width: 100.0%; height: 100.0%;">32K556: Bushwick Leaders High School for Academic Excellence</div>')[0];
+                popup_2cda88c928af42a2ac8ad56768c74a36.setContent(html_c8d8061cf6b34cb7b3a6db518a7a4b0b);
+            
+
+            marker_1dab1217696d4de7b332ca560617ada9.bindPopup(popup_2cda88c928af42a2ac8ad56768c74a36);
+
+            
+        
+    
+
+            var marker_97ffe881aac3412c8e8ad11e88f3cd8d = L.marker(
+                [40.849102168,-73.916088441],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_ed4cf9e8bf5c49a8a0c4aa6f00a220ea);
+            
+    
+            var popup_815bfbc03e0f4dab9469a7444e8413cd = L.popup({maxWidth: '300'});
+
+            
+                var html_65fba82f14a6447da461d7b03d8e1623 = $('<div id="html_65fba82f14a6447da461d7b03d8e1623" style="width: 100.0%; height: 100.0%;">32K556: Bushwick Leaders High School for Academic Excellence</div>')[0];
+                popup_815bfbc03e0f4dab9469a7444e8413cd.setContent(html_65fba82f14a6447da461d7b03d8e1623);
+            
+
+            marker_97ffe881aac3412c8e8ad11e88f3cd8d.bindPopup(popup_815bfbc03e0f4dab9469a7444e8413cd);
+
+            
+        
+    
+
+            var marker_fc27946b7f0249d893c52727cadd39bd = L.marker(
+                [40.827602669,-73.904475257],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_ed4cf9e8bf5c49a8a0c4aa6f00a220ea);
+            
+    
+            var popup_b865e145c58047e6a41d85945fb0d338 = L.popup({maxWidth: '300'});
+
+            
+                var html_0a350c16dee1451ab787727cfd76a684 = $('<div id="html_0a350c16dee1451ab787727cfd76a684" style="width: 100.0%; height: 100.0%;">32K556: Bushwick Leaders High School for Academic Excellence</div>')[0];
+                popup_b865e145c58047e6a41d85945fb0d338.setContent(html_0a350c16dee1451ab787727cfd76a684);
+            
+
+            marker_fc27946b7f0249d893c52727cadd39bd.bindPopup(popup_b865e145c58047e6a41d85945fb0d338);
+
+            
+        
+    
+
+            var marker_35e78c1516f2475e8e0456fed20dcc6a = L.marker(
+                [40.827602669,-73.904475257],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_ed4cf9e8bf5c49a8a0c4aa6f00a220ea);
+            
+    
+            var popup_8a49aed06b5f4f02bb2fdb4ce6bb5aa5 = L.popup({maxWidth: '300'});
+
+            
+                var html_9fadc3fbc3dc40288b290fc51571acc5 = $('<div id="html_9fadc3fbc3dc40288b290fc51571acc5" style="width: 100.0%; height: 100.0%;">32K556: Bushwick Leaders High School for Academic Excellence</div>')[0];
+                popup_8a49aed06b5f4f02bb2fdb4ce6bb5aa5.setContent(html_9fadc3fbc3dc40288b290fc51571acc5);
+            
+
+            marker_35e78c1516f2475e8e0456fed20dcc6a.bindPopup(popup_8a49aed06b5f4f02bb2fdb4ce6bb5aa5);
+
+            
+        
+    
+
+            var marker_25627def96cf4ac49c7e36acff597ee9 = L.marker(
+                [40.870377467,-73.898162952],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_ed4cf9e8bf5c49a8a0c4aa6f00a220ea);
+            
+    
+            var popup_c72fde2979dd49d0be3d24eb424fa2be = L.popup({maxWidth: '300'});
+
+            
+                var html_cba77b03ab2d42f5b8dc1ef5d57c95ae = $('<div id="html_cba77b03ab2d42f5b8dc1ef5d57c95ae" style="width: 100.0%; height: 100.0%;">32K556: Bushwick Leaders High School for Academic Excellence</div>')[0];
+                popup_c72fde2979dd49d0be3d24eb424fa2be.setContent(html_cba77b03ab2d42f5b8dc1ef5d57c95ae);
+            
+
+            marker_25627def96cf4ac49c7e36acff597ee9.bindPopup(popup_c72fde2979dd49d0be3d24eb424fa2be);
+
+            
+        
+    
+
+            var marker_85822d156a024973bba1673ca6f74026 = L.marker(
+                [40.870377467,-73.898162952],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_ed4cf9e8bf5c49a8a0c4aa6f00a220ea);
+            
+    
+            var popup_86baf43258134b06a6e5020adb5e9616 = L.popup({maxWidth: '300'});
+
+            
+                var html_9987938fbb55464bb5a0b413fb5c75fe = $('<div id="html_9987938fbb55464bb5a0b413fb5c75fe" style="width: 100.0%; height: 100.0%;">32K556: Bushwick Leaders High School for Academic Excellence</div>')[0];
+                popup_86baf43258134b06a6e5020adb5e9616.setContent(html_9987938fbb55464bb5a0b413fb5c75fe);
+            
+
+            marker_85822d156a024973bba1673ca6f74026.bindPopup(popup_86baf43258134b06a6e5020adb5e9616);
+
+            
+        
+    
+
+            var marker_e4717c80b5aa465981e2d6f7b160ad01 = L.marker(
+                [40.83136649,-73.878823277],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_ed4cf9e8bf5c49a8a0c4aa6f00a220ea);
+            
+    
+            var popup_6eee9c00741348e8915ba466301648bd = L.popup({maxWidth: '300'});
+
+            
+                var html_32c0c3027c324e1daf3e5f22abd333c6 = $('<div id="html_32c0c3027c324e1daf3e5f22abd333c6" style="width: 100.0%; height: 100.0%;">32K556: Bushwick Leaders High School for Academic Excellence</div>')[0];
+                popup_6eee9c00741348e8915ba466301648bd.setContent(html_32c0c3027c324e1daf3e5f22abd333c6);
+            
+
+            marker_e4717c80b5aa465981e2d6f7b160ad01.bindPopup(popup_6eee9c00741348e8915ba466301648bd);
+
+            
+        
+    
+
+            var marker_509992696c564dbe8186f265c3165e2d = L.marker(
+                [40.83136649,-73.878823277],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_ed4cf9e8bf5c49a8a0c4aa6f00a220ea);
+            
+    
+            var popup_7ff69ee70cda4665866513f86c482d9e = L.popup({maxWidth: '300'});
+
+            
+                var html_117c860f459a47e29ab361ece92134b9 = $('<div id="html_117c860f459a47e29ab361ece92134b9" style="width: 100.0%; height: 100.0%;">32K556: Bushwick Leaders High School for Academic Excellence</div>')[0];
+                popup_7ff69ee70cda4665866513f86c482d9e.setContent(html_117c860f459a47e29ab361ece92134b9);
+            
+
+            marker_509992696c564dbe8186f265c3165e2d.bindPopup(popup_7ff69ee70cda4665866513f86c482d9e);
+
+            
+        
+    
+
+            var marker_faf7cf7e03e6442aa1cf7b7f8d75e1a5 = L.marker(
+                [40.83136649,-73.878823277],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_ed4cf9e8bf5c49a8a0c4aa6f00a220ea);
+            
+    
+            var popup_f62ec5eafb2a434ebba4bb09527df805 = L.popup({maxWidth: '300'});
+
+            
+                var html_09f0b7d0ac20441c979202a2ec7e9927 = $('<div id="html_09f0b7d0ac20441c979202a2ec7e9927" style="width: 100.0%; height: 100.0%;">32K556: Bushwick Leaders High School for Academic Excellence</div>')[0];
+                popup_f62ec5eafb2a434ebba4bb09527df805.setContent(html_09f0b7d0ac20441c979202a2ec7e9927);
+            
+
+            marker_faf7cf7e03e6442aa1cf7b7f8d75e1a5.bindPopup(popup_f62ec5eafb2a434ebba4bb09527df805);
+
+            
+        
+    
+
+            var marker_0e62f56c519947819bac9d00e7aa961d = L.marker(
+                [40.83136649,-73.878823277],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_ed4cf9e8bf5c49a8a0c4aa6f00a220ea);
+            
+    
+            var popup_45b2c7687e184a8fbb3d3f5508dd18a4 = L.popup({maxWidth: '300'});
+
+            
+                var html_6357a5610685400fbadff289e6f37bb7 = $('<div id="html_6357a5610685400fbadff289e6f37bb7" style="width: 100.0%; height: 100.0%;">32K556: Bushwick Leaders High School for Academic Excellence</div>')[0];
+                popup_45b2c7687e184a8fbb3d3f5508dd18a4.setContent(html_6357a5610685400fbadff289e6f37bb7);
+            
+
+            marker_0e62f56c519947819bac9d00e7aa961d.bindPopup(popup_45b2c7687e184a8fbb3d3f5508dd18a4);
+
+            
+        
+    
+
+            var marker_30825d8d68cc4fe682a20d6656245ba0 = L.marker(
+                [40.697174727,-73.984959689],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_ed4cf9e8bf5c49a8a0c4aa6f00a220ea);
+            
+    
+            var popup_9e2d6a494f944c02917f098f66997087 = L.popup({maxWidth: '300'});
+
+            
+                var html_2eea8f15bc924024a9f288d91d733863 = $('<div id="html_2eea8f15bc924024a9f288d91d733863" style="width: 100.0%; height: 100.0%;">32K556: Bushwick Leaders High School for Academic Excellence</div>')[0];
+                popup_9e2d6a494f944c02917f098f66997087.setContent(html_2eea8f15bc924024a9f288d91d733863);
+            
+
+            marker_30825d8d68cc4fe682a20d6656245ba0.bindPopup(popup_9e2d6a494f944c02917f098f66997087);
+
+            
+        
+    
+
+            var marker_a0579737e8194b5c9bb1f0364f7f7bfa = L.marker(
+                [40.697174727,-73.984959689],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_ed4cf9e8bf5c49a8a0c4aa6f00a220ea);
+            
+    
+            var popup_cdefb8f821d64ef6959e0947b5ed8066 = L.popup({maxWidth: '300'});
+
+            
+                var html_866afa94a4f347e0bf1adc28723346b1 = $('<div id="html_866afa94a4f347e0bf1adc28723346b1" style="width: 100.0%; height: 100.0%;">32K556: Bushwick Leaders High School for Academic Excellence</div>')[0];
+                popup_cdefb8f821d64ef6959e0947b5ed8066.setContent(html_866afa94a4f347e0bf1adc28723346b1);
+            
+
+            marker_a0579737e8194b5c9bb1f0364f7f7bfa.bindPopup(popup_cdefb8f821d64ef6959e0947b5ed8066);
+
+            
+        
+    
+
+            var marker_1f2ed13c636140b8a59f28cd33e9e699 = L.marker(
+                [40.670298907,-73.961647876],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_ed4cf9e8bf5c49a8a0c4aa6f00a220ea);
+            
+    
+            var popup_7d60bf517d15473586fe583b7ca83956 = L.popup({maxWidth: '300'});
+
+            
+                var html_c774f7bb30d040bd871ea74b98cde906 = $('<div id="html_c774f7bb30d040bd871ea74b98cde906" style="width: 100.0%; height: 100.0%;">32K556: Bushwick Leaders High School for Academic Excellence</div>')[0];
+                popup_7d60bf517d15473586fe583b7ca83956.setContent(html_c774f7bb30d040bd871ea74b98cde906);
+            
+
+            marker_1f2ed13c636140b8a59f28cd33e9e699.bindPopup(popup_7d60bf517d15473586fe583b7ca83956);
+
+            
+        
+    
+
+            var marker_ad92a367f7264ff2a6854e5465d0ab57 = L.marker(
+                [40.670298907,-73.961647876],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_ed4cf9e8bf5c49a8a0c4aa6f00a220ea);
+            
+    
+            var popup_bf6c4c6d463b4c7f99b93057cba7cb48 = L.popup({maxWidth: '300'});
+
+            
+                var html_4dd128db665948e8bab9b4e2e648cc72 = $('<div id="html_4dd128db665948e8bab9b4e2e648cc72" style="width: 100.0%; height: 100.0%;">32K556: Bushwick Leaders High School for Academic Excellence</div>')[0];
+                popup_bf6c4c6d463b4c7f99b93057cba7cb48.setContent(html_4dd128db665948e8bab9b4e2e648cc72);
+            
+
+            marker_ad92a367f7264ff2a6854e5465d0ab57.bindPopup(popup_bf6c4c6d463b4c7f99b93057cba7cb48);
+
+            
+        
+    
+
+            var marker_2052c858f0034835ba419dbf82ff5851 = L.marker(
+                [40.648663663,-73.921898762],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_ed4cf9e8bf5c49a8a0c4aa6f00a220ea);
+            
+    
+            var popup_b16a621f839b4b928df336abcbc7ff12 = L.popup({maxWidth: '300'});
+
+            
+                var html_d99da4dc48814c6ca4fdf8f839d7a758 = $('<div id="html_d99da4dc48814c6ca4fdf8f839d7a758" style="width: 100.0%; height: 100.0%;">32K556: Bushwick Leaders High School for Academic Excellence</div>')[0];
+                popup_b16a621f839b4b928df336abcbc7ff12.setContent(html_d99da4dc48814c6ca4fdf8f839d7a758);
+            
+
+            marker_2052c858f0034835ba419dbf82ff5851.bindPopup(popup_b16a621f839b4b928df336abcbc7ff12);
+
+            
+        
+    
+
+            var marker_a45d40499c3f491fa0b75dd5336be6d2 = L.marker(
+                [40.648663663,-73.921898762],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_ed4cf9e8bf5c49a8a0c4aa6f00a220ea);
+            
+    
+            var popup_116c034303e64668941f7ddf49159a4d = L.popup({maxWidth: '300'});
+
+            
+                var html_98b0c13042634eb0a864740658e85bab = $('<div id="html_98b0c13042634eb0a864740658e85bab" style="width: 100.0%; height: 100.0%;">32K556: Bushwick Leaders High School for Academic Excellence</div>')[0];
+                popup_116c034303e64668941f7ddf49159a4d.setContent(html_98b0c13042634eb0a864740658e85bab);
+            
+
+            marker_a45d40499c3f491fa0b75dd5336be6d2.bindPopup(popup_116c034303e64668941f7ddf49159a4d);
+
+            
+        
+    
+
+            var marker_b46aca0f42454a44a02f4166addc3ad9 = L.marker(
+                [40.691143962,-73.868426057],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_ed4cf9e8bf5c49a8a0c4aa6f00a220ea);
+            
+    
+            var popup_e60d7eee077f4b58bdf0016523173d79 = L.popup({maxWidth: '300'});
+
+            
+                var html_7bea44b3ce8742d891419e3e47357b64 = $('<div id="html_7bea44b3ce8742d891419e3e47357b64" style="width: 100.0%; height: 100.0%;">32K556: Bushwick Leaders High School for Academic Excellence</div>')[0];
+                popup_e60d7eee077f4b58bdf0016523173d79.setContent(html_7bea44b3ce8742d891419e3e47357b64);
+            
+
+            marker_b46aca0f42454a44a02f4166addc3ad9.bindPopup(popup_e60d7eee077f4b58bdf0016523173d79);
+
+            
+        
+    
+
+            var marker_7fc6f1447829468da5f1f3023b9690a9 = L.marker(
+                [40.691143962,-73.868426057],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_ed4cf9e8bf5c49a8a0c4aa6f00a220ea);
+            
+    
+            var popup_8047b26970624f5a9abf9529a9da5634 = L.popup({maxWidth: '300'});
+
+            
+                var html_092030d6fa824a36a70689e33834a44e = $('<div id="html_092030d6fa824a36a70689e33834a44e" style="width: 100.0%; height: 100.0%;">32K556: Bushwick Leaders High School for Academic Excellence</div>')[0];
+                popup_8047b26970624f5a9abf9529a9da5634.setContent(html_092030d6fa824a36a70689e33834a44e);
+            
+
+            marker_7fc6f1447829468da5f1f3023b9690a9.bindPopup(popup_8047b26970624f5a9abf9529a9da5634);
+
+            
+        
+    
+
+            var marker_3aa193bc94334e05acace98d1d446f96 = L.marker(
+                [40.743302873,-73.870574977],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_ed4cf9e8bf5c49a8a0c4aa6f00a220ea);
+            
+    
+            var popup_f11a2a3e298f45d69a801091477f6d53 = L.popup({maxWidth: '300'});
+
+            
+                var html_c5daea36a137451ab0019a0ab47ff426 = $('<div id="html_c5daea36a137451ab0019a0ab47ff426" style="width: 100.0%; height: 100.0%;">32K556: Bushwick Leaders High School for Academic Excellence</div>')[0];
+                popup_f11a2a3e298f45d69a801091477f6d53.setContent(html_c5daea36a137451ab0019a0ab47ff426);
+            
+
+            marker_3aa193bc94334e05acace98d1d446f96.bindPopup(popup_f11a2a3e298f45d69a801091477f6d53);
+
+            
+        
+    
+
+            var marker_6e3bc86ad7524df2ba2f0c59737bc529 = L.marker(
+                [40.743302873,-73.870574977],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_ed4cf9e8bf5c49a8a0c4aa6f00a220ea);
+            
+    
+            var popup_23cd8734761d4691b685d77374d66848 = L.popup({maxWidth: '300'});
+
+            
+                var html_9f90ab9507db4a399f3bdcef7cb813b3 = $('<div id="html_9f90ab9507db4a399f3bdcef7cb813b3" style="width: 100.0%; height: 100.0%;">32K556: Bushwick Leaders High School for Academic Excellence</div>')[0];
+                popup_23cd8734761d4691b685d77374d66848.setContent(html_9f90ab9507db4a399f3bdcef7cb813b3);
+            
+
+            marker_6e3bc86ad7524df2ba2f0c59737bc529.bindPopup(popup_23cd8734761d4691b685d77374d66848);
+
+            
+        
+</script>
