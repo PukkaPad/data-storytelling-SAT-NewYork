@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.9.min.css" type="text/css" />
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.9.min.css" type="text/css" />
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-tables-0.12.9.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.9.min.js"></script>
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.9.min.js"></script>
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-tables-0.12.9.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="da6db089-bfe2-405d-8d17-da6921efc992"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"fba0665b-37ba-4f40-a880-baf29d021c4c":{"roots":{"references":[{"attributes":{"editor":{"id":"f0c0311e-34a7-4597-8b0b-f1163fc85bfc","type":"StringEditor"},"field":"hispanic_per","formatter":{"id":"bd2f4d37-64c1-4ca1-ad9c-bd3af5112c78","type":"StringFormatter"},"title":"% Hispanic Students"},"id":"12f7c88f-8ce4-4bc6-908f-9d77a321b60a","type":"TableColumn"},{"attributes":{},"id":"0d04f147-4fb5-42db-8e27-cf0d069ca6f6","type":"StringFormatter"},{"attributes":{"editor":{"id":"c3e537c3-3107-4495-8e10-89f8311bdaf5","type":"StringEditor"},"field":"asian_per","formatter":{"id":"0d04f147-4fb5-42db-8e27-cf0d069ca6f6","type":"StringFormatter"},"title":"% Asian Students"},"id":"7fbf4aa5-da17-4e98-a442-a295428ae137","type":"TableColumn"},{"attributes":{},"id":"84c07b9a-11c4-4158-ab48-def3163e8514","type":"StringEditor"},{"attributes":{},"id":"51a6c9f1-e12a-44d2-b273-5effdcb08737","type":"StringEditor"},{"attributes":{},"id":"684b52fd-6ee2-43b0-a8d5-f450ed26e45f","type":"StringFormatter"},{"attributes":{},"id":"10a28324-e4c7-4199-a652-7e7f4ac7059a","type":"StringFormatter"},{"attributes":{},"id":"8dfb20b0-7de8-4ca4-9bce-b5670e4c20a3","type":"StringEditor"},{"attributes":{"editor":{"id":"e00799e5-d28f-41b3-946b-2d872af7c29a","type":"StringEditor"},"field":"SAT_score","formatter":{"id":"5d058de0-eb9b-4563-ad11-0a26f459e242","type":"StringFormatter"},"title":"SAT score"},"id":"0c8d0a35-2524-4887-bec3-5e12cef17ee2","type":"TableColumn"},{"attributes":{},"id":"27192beb-f60c-41e1-a175-3e51767cfbd9","type":"StringEditor"},{"attributes":{},"id":"ff158056-53b1-465f-be71-c9bb30910186","type":"StringEditor"},{"attributes":{},"id":"bd2f4d37-64c1-4ca1-ad9c-bd3af5112c78","type":"StringFormatter"},{"attributes":{},"id":"f0c0311e-34a7-4597-8b0b-f1163fc85bfc","type":"StringEditor"},{"attributes":{},"id":"796faa5d-6343-40cb-816f-5abb30b3b462","type":"StringFormatter"},{"attributes":{},"id":"c3e537c3-3107-4495-8e10-89f8311bdaf5","type":"StringEditor"},{"attributes":{"callback":null,"column_names":["SAT Math Avg. Score","name","SAT Writing Avg. Score","index","SAT_score","ell_percent","asian_per","white_per","male_per","black_per","total_enrollment","hispanic_per","female_per"],"data":{"SAT Math Avg. Score":{"__ndarray__":"Xij7L+Qf7z8AAAAAAADwPz6J8hTnze0/JoMYh9Z80r/voMnhWuHaPz8qtlfPA+M/C2Cys5Oq5T8K5yAsDG7Wv1fAy3vPBdi/TXfipqqfoz+QmLv0o5mjvw==","dtype":"float64","shape":[11]},"SAT Writing Avg. Score":{"__ndarray__":"Gm99kNGb7z8+ifIU583tPwAAAAAAAPA/erkkoJyV278MJlkH5MfUP1AsjYxop+M/E/+23S/43z9XN2hY3j3Qv+dYeq8frNi/6xTNHeo6xT9R9rJ8YTnFvw==","dtype":"float64","shape":[11]},"SAT_score":{"__ndarray__":"AAAAAAAA8D9eKPsv5B/vPxpvfZDRm+8/cSIdTYZ72b+EFu7w+nnXP2lNcwHTheM/5heVrzAy4j+Nn6MkPhnSv54m6xL4INm/vWIhGZk1vD941SHYrzK8vw==","dtype":"float64","shape":[11]},"asian_per":{"__ndarray__":"5heVrzAy4j8LYLKzk6rlPxP/tt0v+N8/VQ9rsX6suz+F0hnZuNrbP+Ba3HJCudY/AAAAAAAA8D9LAT1YS5Tav2b68SBL89a/2VyxA2fAR78iOhlV/+FIPw==","dtype":"float64","shape":[11]},"black_per":{"__ndarray__":"jZ+jJD4Z0r8K5yAsDG7Wv1c3aFjePdC/O97ASfBh1r8cYN5cpOTNv1qAJ1wVSdq/SwE9WEuU2r8AAAAAAADwP+iGqNzM9uG/3Z2Bn6Shez8M7B3DBqB7vw==","dtype":"float64","shape":[11]},"ell_percent":{"__ndarray__":"cSIdTYZ72b8mgxiH1nzSv3q5JKCcldu/AAAAAAAA8D/kq9MNccazvx6QtkrKscW/VQ9rsX6suz873sBJ8GHWvw8XfIHKrNk/v4VMu6I4vL/3tlNwyjm8Pw==","dtype":"float64","shape":[11]},"female_per":{"__ndarray__":"vWIhGZk1vD9Nd+Kmqp+jP+sUzR3qOsU/v4VMu6I4vL8e0UYMfy+zv4RWHGvnCq8/2VyxA2fAR7/dnYGfpKF7P1NUQgV7sKa/AAAAAAAA8D/KAqBJ///vvw==","dtype":"float64","shape":[11]},"hispanic_per":{"__ndarray__":"nibrEvgg2b9XwMt7zwXYv+dYeq8frNi/Dxd8gcqs2T/YG03tiSjKvzUV65rmsda/ZvrxIEvz1r/ohqjczPbhvwAAAAAAAPA/U1RCBXuwpr9mzd3bJKumPw==","dtype":"float64","shape":[11]},"index":[0,1,2,3,4,5,6,7,8,9,10],"male_per":{"__ndarray__":"eNUh2K8yvL+QmLv0o5mjv1H2snxhOcW/97ZTcMo5vD+MGzajRDGzP2LI68XDBq+/IjoZVf/hSD8M7B3DBqB7v2bN3dskq6Y/ygKgSf//778AAAAAAADwPw==","dtype":"float64","shape":[11]},"name":["SAT_score","SAT Math Avg. Score","SAT Writing Avg. Score","ell_percent","total_enrollment","white_per","asian_per","black_per","hispanic_per","female_per","male_per"],"total_enrollment":{"__ndarray__":"hBbu8Pp51z/voMnhWuHaPwwmWQfkx9Q/5KvTDXHGs78AAAAAAADwPxsNgMDi6NU/hdIZ2bja2z8cYN5cpOTNv9gbTe2JKMq/HtFGDH8vs7+MGzajRDGzPw==","dtype":"float64","shape":[11]},"white_per":{"__ndarray__":"aU1zAdOF4z8/KrZXzwPjP1AsjYxop+M/HpC2Ssqxxb8bDYDA4ujVPwAAAAAAAPA/4FrcckK51j9agCdcFUnavzUV65rmsda/hFYca+cKrz9iyOvFwwavvw==","dtype":"float64","shape":[11]}}},"id":"d9f5254b-1930-45f6-8750-a93e5354a180","type":"ColumnDataSource"},{"attributes":{"source":{"id":"d9f5254b-1930-45f6-8750-a93e5354a180","type":"ColumnDataSource"}},"id":"6f2f3158-70f9-4fb7-a21f-5728ac4c2726","type":"CDSView"},{"attributes":{},"id":"50d79eff-fbe8-41eb-9011-cc621aca09b1","type":"StringFormatter"},{"attributes":{"children":[{"id":"c1a32c19-abaf-4220-8c03-38ed963d3f1a","type":"DataTable"}]},"id":"5a8070c3-386f-4cc7-a550-030546f8d0ad","type":"WidgetBox"},{"attributes":{},"id":"ec60e008-addf-4058-8bf6-cb8cde3d7eaa","type":"StringFormatter"},{"attributes":{},"id":"790765dd-cda7-4cf0-8dc5-2ff68272efe9","type":"StringFormatter"},{"attributes":{"editor":{"id":"ff158056-53b1-465f-be71-c9bb30910186","type":"StringEditor"},"field":"SAT Writing Avg. Score","formatter":{"id":"684b52fd-6ee2-43b0-a8d5-f450ed26e45f","type":"StringFormatter"},"title":"SAT Writing - Average"},"id":"8b5d2d56-7d3b-4385-9d77-4cf6bf19c4a8","type":"TableColumn"},{"attributes":{},"id":"72f9a0ce-0724-4133-9fc1-0986c57195cd","type":"StringEditor"},{"attributes":{},"id":"5d058de0-eb9b-4563-ad11-0a26f459e242","type":"StringFormatter"},{"attributes":{"editor":{"id":"8dfb20b0-7de8-4ca4-9bce-b5670e4c20a3","type":"StringEditor"},"field":"name","formatter":{"id":"10a28324-e4c7-4199-a652-7e7f4ac7059a","type":"StringFormatter"},"title":"Names"},"id":"a9338540-400a-467c-8b5f-83eb8b41ab29","type":"TableColumn"},{"attributes":{"editor":{"id":"51a6c9f1-e12a-44d2-b273-5effdcb08737","type":"StringEditor"},"field":"white_per","formatter":{"id":"50d79eff-fbe8-41eb-9011-cc621aca09b1","type":"StringFormatter"},"title":"% White Students"},"id":"31755c9f-c9fc-4f40-8f3a-e82a3e689eb3","type":"TableColumn"},{"attributes":{"editor":{"id":"72f9a0ce-0724-4133-9fc1-0986c57195cd","type":"StringEditor"},"field":"ell_percent","formatter":{"id":"790765dd-cda7-4cf0-8dc5-2ff68272efe9","type":"StringFormatter"},"title":"% English Learners"},"id":"bdeb788e-d3af-4a2a-9b88-49bd28e5b502","type":"TableColumn"},{"attributes":{},"id":"e00799e5-d28f-41b3-946b-2d872af7c29a","type":"StringEditor"},{"attributes":{"editor":{"id":"84c07b9a-11c4-4158-ab48-def3163e8514","type":"StringEditor"},"field":"black_per","formatter":{"id":"ec60e008-addf-4058-8bf6-cb8cde3d7eaa","type":"StringFormatter"},"title":"% Black Students"},"id":"97f4b45d-e730-46f3-a4d1-65b828ac16c4","type":"TableColumn"},{"attributes":{"editor":{"id":"27192beb-f60c-41e1-a175-3e51767cfbd9","type":"StringEditor"},"field":"SAT Math Avg. Score","formatter":{"id":"796faa5d-6343-40cb-816f-5abb30b3b462","type":"StringFormatter"},"title":"SAT Maths - Average"},"id":"83c6432c-cd92-4b0e-b8a8-d832f4ee8e5d","type":"TableColumn"},{"attributes":{"columns":[{"id":"a9338540-400a-467c-8b5f-83eb8b41ab29","type":"TableColumn"},{"id":"0c8d0a35-2524-4887-bec3-5e12cef17ee2","type":"TableColumn"},{"id":"83c6432c-cd92-4b0e-b8a8-d832f4ee8e5d","type":"TableColumn"},{"id":"8b5d2d56-7d3b-4385-9d77-4cf6bf19c4a8","type":"TableColumn"},{"id":"bdeb788e-d3af-4a2a-9b88-49bd28e5b502","type":"TableColumn"},{"id":"31755c9f-c9fc-4f40-8f3a-e82a3e689eb3","type":"TableColumn"},{"id":"7fbf4aa5-da17-4e98-a442-a295428ae137","type":"TableColumn"},{"id":"97f4b45d-e730-46f3-a4d1-65b828ac16c4","type":"TableColumn"},{"id":"12f7c88f-8ce4-4bc6-908f-9d77a321b60a","type":"TableColumn"}],"source":{"id":"d9f5254b-1930-45f6-8750-a93e5354a180","type":"ColumnDataSource"},"view":{"id":"6f2f3158-70f9-4fb7-a21f-5728ac4c2726","type":"CDSView"},"width":1010},"id":"c1a32c19-abaf-4220-8c03-38ed963d3f1a","type":"DataTable"}],"root_ids":["5a8070c3-386f-4cc7-a550-030546f8d0ad"]},"title":"Bokeh Application","version":"0.12.9"}};
+                  var render_items = [{"docid":"fba0665b-37ba-4f40-a880-baf29d021c4c","elementid":"da6db089-bfe2-405d-8d17-da6921efc992","modelid":"5a8070c3-386f-4cc7-a550-030546f8d0ad"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

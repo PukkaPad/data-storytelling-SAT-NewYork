@@ -36,6 +36,15 @@ Installation
 
 api
 ----------------------
+* Create a virtaul environment in which Flask and all the necessary libraries will be installed
+    * `mkdir api_development`
+    * `cd api_development`
+    * For Python 2.x: `virtualenv venv`
+    Note: Install the requirements were saved in `requirements.txt`
+* Run:
+    * `source venv\bin\activate`
+    (make sure the directory is `api_development`)
+    * python server.py
 
 
 dashboard
@@ -49,4 +58,8 @@ dashboard
     * `flask/bin/pip install flask`
     * `flask/bin/pip install pandas`
     * `flask/bin/pip install bokeh`
-    *
+* Run:
+    * `source flask\bin\activate`
+    (make sure the directory is `dashboad`)
+    * `chmod a+x views.py`
+    * `./views.py`

@@ -10,25 +10,35 @@
 <script src="http://cdn.pydata.org/bokeh/release/bokeh-0.12.9.min.js"></script>
 <script src="http://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.9.min.js"></script>
 
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
 </head>
 <body>
-<H1>SAT data</H1>
+<H1 align="center">SAT data</H1>
+<div id="wrapper">
+    <H2 align="left">Scatter Plots</H2>
+    <div style="float: left; width: 5%; display: inline-block;">
+        <form action="/">
+        <select name="feature_name">
+            {% for feature in feature_names %}
+                {% if feature == current_feature_name %}
+                    <option selected value="{{ feature }}">{{ feature }}</option>
+                {% else %}
+                    <option value="{{ feature }}">{{ feature }}</option>
+                {% endif %}
+            {% endfor %}
+        </select>
+        <input type="submit">
+        </form>
 
-<form action="/">
-<select name="feature_name">
-    {% for feature in feature_names %}
-        {% if feature == current_feature_name %}
-            <option selected value="{{ feature }}">{{ feature }}</option>
-        {% else %}
-            <option value="{{ feature }}">{{ feature }}</option>
-        {% endif %}
-    {% endfor %}
-</select>
-<input type="submit">
-</form>
+    {{ script|safe }}
+    {{ div|safe }}
+    </div>
+    <H2 align="right">Correlation Table</H2>
+    <div style="float: left; width: 5%; margin-left: 600px; margin-top: 40px;">
+    {% include 'SAT_corr_table.html' %}
+    </div>
 
-{{ script|safe }}
-{{ div|safe }}
-
+</div>
 </body>
 </html>
