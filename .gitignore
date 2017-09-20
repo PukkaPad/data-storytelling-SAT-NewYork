@@ -7,6 +7,15 @@ __pycache__
 /tests
 *~
 /data
+/dashboard/flask
+*.db
+config.py
+flask/
+venv/
 
 # Jupyter Notebook
 .ipynb_checkpoints
+
+#sublime
+*.sublime-project
+*.sublime-workspace

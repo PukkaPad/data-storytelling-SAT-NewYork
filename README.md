@@ -34,5 +34,19 @@ Installation
 * Install the requirements using `pip install -r requirements.txt`.
     * You may want to use a virtual environment for this.
 
+api
+----------------------
 
 
+dashboard
+----------------------
+
+* Create a virtaul environment in which Flask and all the necessary libraries will be installed
+    * `mkdir daskboard`
+    * `cd dashboard`
+    * For Python 2.x: `virtualenv flask`
+* Install:
+    * `flask/bin/pip install flask`
+    * `flask/bin/pip install pandas`
+    * `flask/bin/pip install bokeh`
+    *
