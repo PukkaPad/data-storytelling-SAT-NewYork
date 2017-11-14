@@ -43,4 +43,4 @@ api.add_resource(Correlation, '/v1.0/SATCorrelation')
 api.add_resource(Boro, '/v1.0/boro/<string:boro_name>')
 
 if __name__ == '__main__':
-     app.run(port='5002')
+    app.run(port='5002')

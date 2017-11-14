@@ -12,6 +12,7 @@ __pycache__
 config.py
 flask/
 venv/
+api_development/server_test.py
 
 # Jupyter Notebook
 .ipynb_checkpoints

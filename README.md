@@ -1,7 +1,7 @@
 New York SAT - Storytelling Project
 -----------------------
 
-Data cleaning, exploraration and visualization for the SAT New York city public schools.
+Data cleaning, exploration and visualization for the SAT New York city public schools.
 
 
 Installation
@@ -36,7 +36,7 @@ Installation
 
 api
 ----------------------
-* Create a virtaul environment in which Flask and all the necessary libraries will be installed
+* Create a virtual environment in which Flask and all the necessary libraries will be installed
     * `mkdir api_development`
     * `cd api_development`
     * For Python 2.x: `virtualenv venv`
@@ -50,7 +50,7 @@ api
 dashboard
 ----------------------
 
-* Create a virtaul environment in which Flask and all the necessary libraries will be installed
+* Create a virtual environment in which Flask and all the necessary libraries will be installed
     * `mkdir daskboard`
     * `cd dashboard`
     * For Python 2.x: `virtualenv flask`
